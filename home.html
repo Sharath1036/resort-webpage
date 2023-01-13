@@ -23,7 +23,7 @@
         <td width="115">Rooms</td> 
         <td width="115">Services</td>
         <td width="115">Facilities</td> 
-        <td width="115">Contact</td>      
+        <td width="115"><a href="#feedback">Feedback</a></td>      
     </tr>
     </table>
     <br><br><br><br>
@@ -87,8 +87,50 @@
         </tr>
     </table>
     <br><br><br><br>
+
     
-    <div id="footer">Home - Rooms - Services - Facilities - Contact <br><br> © 2019 by Rangeela Resort</div>
+    <div id="feedback" class="heading">Feedback</div>
+    <div id="review">
+        <form action="feedback.php" method="post">
+            <table width="600" border="0" cellpadding="1" cellspacing="1">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" maxlength="50"></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"</td>
+                </tr>
+
+                <tr> 
+                    <td>Rate us on a scale of 5</td>    
+                    <td>
+                        <input type="radio" name="rating" value="5" />5
+                        <input type="radio" name="rating" value="4" />4
+                        <input type="radio" name="rating" value="3" />3
+                        <input type="radio" name="rating" value="2" />2
+                        <input type="radio" name="rating" value="1" />1
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>Additional Comments</td>
+                    <td><textarea name="comments" cols="30" rows="5"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit"</td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    
+
+    
+    <div id="footer">Home - Rooms - Services - Facilities - Contact <br><br> © 2023 by Rangeela Resort</div>
 
 </body>
 </html>
